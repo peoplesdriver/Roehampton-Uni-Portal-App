@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FloorMap">
+
+    <Button
+        android:id="@+id/id5_map_btn_lg2"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="@color/student_light_green"
+        android:text="@string/lg2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id5_map_btn_lg1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/id5_map_btn_lg1"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="@color/student_light_green"
+        android:text="@string/lg1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id5_map_btn_g"
+        app:layout_constraintStart_toEndOf="@+id/id5_map_btn_lg2" />
+
+    <Button
+        android:id="@+id/id5_map_btn_g"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="@color/student_light_green"
+        android:text="@string/g"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id5_map_btn_f1"
+        app:layout_constraintStart_toEndOf="@+id/id5_map_btn_lg1" />
+
+    <Button
+        android:id="@+id/id5_map_btn_f1"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="@color/student_light_green"
+        android:text="@string/f1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id5_map_btn_f2"
+        app:layout_constraintStart_toEndOf="@+id/id5_map_btn_g" />
+
+    <Button
+        android:id="@+id/id5_map_btn_f2"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="@color/student_light_green"
+        android:text="@string/f2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id5_map_btn_f3"
+        app:layout_constraintStart_toEndOf="@+id/id5_map_btn_f1" />
+
+    <Button
+        android:id="@+id/id5_map_btn_f3"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="@color/student_light_green"
+        android:text="@string/f3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id5_map_btn_f2" />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/id5_map_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ground_floor"
+        android:contentDescription="@string/todo" />
+
+</android.support.constraint.ConstraintLayout>
